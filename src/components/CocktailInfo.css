@@ -1,0 +1,76 @@
+.cocktail-info{
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.cocktail-info .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cocktail-info .title a{
+    position: absolute;
+    left: 0;
+    display: flex;
+}
+
+.cocktail-info .title h2{
+    color: #fff;
+    font-weight: 500;
+    width: 500px;
+    text-align: center;
+}
+
+.cocktail-info .info{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cocktail-info .info img{
+    width: 50%;
+    order: 2;
+}
+
+.cocktail-info .info .text{
+    width: 50%;
+    order: 1;
+}
+
+.cocktail-info .info h3{
+    text-decoration: underline;
+}
+
+@media(max-width:768px){
+      
+    .cocktail-info .title h2{
+        width: 250px;
+    }
+
+    .cocktail-info .info{
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cocktail-info .info img{
+        width: 100%;
+        order: 1;
+    }
+    
+    .cocktail-info .info .text{
+        width: 100%;
+        order: 2;
+    }
+}
+
+@media(max-width:300px){
+    .cocktail-info .title h2{
+        width: 150px;
+    }
+}
